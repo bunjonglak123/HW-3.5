@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--หลังจากที่ผ่านtdหรือthตัวแรกแล้วให้ทำคำสั่งในStyle-->
+    <!--หลังจากที่ผ่านdivตัวแรกแล้วให้ทำคำสั่งในStyledก่อนจะขึ้นelementp-->
+    <style>
+        td+td,
+        th+th,
+        div+p {
+          border-left: 10px solid #BBB;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>ข้อ5.1 Adjacent-Sibling selector คือ หลังจากที่ผ่านelementตัวแรกที่กำหนดให้ใช้Style ตัวถัดไปของelement</p><br>
+    <p>ข้อ5.2</p>
+    <table>
+        <tr>
+            <th>Property</th>
+                  <th>Values</th>
+                  <th>Used with Elements</th>
+        </tr>
+        </table>
+        <div>test</div>
+        <p>hello</p>
+        <p>hello</p>
+        <div>test</div>
+        <p>hello</p>
+    
+</body>
+</html>
